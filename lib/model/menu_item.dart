@@ -1,14 +1,13 @@
 import 'package:flutter/widgets.dart';
 
 class MenuItem {
-  final String label;
-  final IconData icon;
-  final bool isDestuctive;
+  final String id;
+  final Widget label;
+  final Widget icon;
 
-  // contsructor
   const MenuItem({
+    required this.id,
     required this.label,
     required this.icon,
-    this.isDestuctive = false,
   });
 }
