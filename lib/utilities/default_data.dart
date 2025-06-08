@@ -11,8 +11,8 @@ class DefaultData {
     '😮',
     '😢',
     '😠',
-    '➕',
   ];
+
   // The default list of menuItems
   static const List<MenuItem> menuItems = [
     reply,
@@ -22,20 +22,22 @@ class DefaultData {
 
   // defaul reply menu item
   static const MenuItem reply = MenuItem(
-    label: 'Reply',
-    icon: Icons.reply,
+    id: 'Reply',
+    label: Text('Reply'),
+    icon: Icon(Icons.reply),
   );
 
   // default copy menu item
   static const MenuItem copy = MenuItem(
-    label: 'Copy',
-    icon: Icons.copy,
+    id: 'Copy',
+    label: Text('Copy'),
+    icon: Icon(Icons.copy),
   );
 
   // default edit menu item
   static const MenuItem delete = MenuItem(
-    label: 'Delete',
-    icon: Icons.delete_forever,
-    isDestuctive: true,
+    id: 'Delete',
+    label: Text('Delete'),
+    icon: Icon(Icons.delete_forever),
   );
 }

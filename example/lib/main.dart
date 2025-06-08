@@ -105,7 +105,10 @@ class _ChatScreenState extends State<ChatScreen> {
                           HeroDialogRoute(
                             builder: (context) {
                               return ReactionsDialogWidget(
+                                menuColor: Colors.black,
                                 id: message.id, // unique id for message
+                                paddingItemMenu: EdgeInsets.symmetric(vertical: 20),
+                                divider: Divider(height: 0),
                                 messageWidget: MessageWidget(
                                     message: message), // message widget
                                 onReactionTap: (reaction) {
